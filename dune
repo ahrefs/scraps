@@ -1,0 +1,6 @@
+(executable
+ (name prel)
+ (libraries astring oseq containers git git-unix tyxml tyxml-ppx lwt lwt_ppx re2 ppx_deriving.std)
+ (preprocess (pps tyxml-ppx lwt_ppx ppx_deriving.std))
+ )
+
